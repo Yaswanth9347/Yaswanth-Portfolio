@@ -1,34 +1,52 @@
-# Portfolio Website - Yaswanth
-
-Welcome to the portfolio website of Yaswanth – an aspiring software developer passionate about web development and problem-solving. This project is a static website built using HTML, CSS, and JavaScript to showcase skills, projects, education, and contact information in a modern, responsive design.
+# Yaswanth's Portfolio
 
 ## Overview
-
-This portfolio website consists of four main pages:
-
-- **Home (index.html):** Introduces Yaswanth with a brief overview and social media links.
-- **Projects (projects.html):** Displays a showcase of personal projects with links to GitHub repositories.
-- **About (about.html):** Provides detailed information about Yaswanth’s skills, education, and interests.
-- **Contact (contact.html):** Offers contact details along with a link to a Google Form for sending messages.
+This is a personal portfolio website for showcasing projects, skills, and contact information. The website is built using HTML, CSS, and JavaScript and is designed to be responsive and visually appealing.
 
 ## Features
-
-- **Responsive Design:** Ensures a great user experience across desktops, tablets, and mobile devices.
-- **Dynamic Navigation:** Highlights the current page in the navigation bar automatically.
-- **Auto-updating Footer:** Displays the current year dynamically.
-- **Project Showcase:** Clean presentation of projects with direct links to GitHub.
-- **Contact Integration:** Includes links to email, LinkedIn, GitHub, and a Google Form for inquiries.
+- **Home Page:** Introduction to Yaswanth with social links.
+- **Projects Page:** Displays Yaswanth's projects with descriptions and GitHub links.
+- **About Page:** Provides information about Yaswanth, including skills, education, and interests.
+- **Contact Page:** Includes contact details and a Google Form link for reaching out.
 
 ## Technologies Used
+- **HTML**: Structure of the website.
+- **CSS**: Styling and responsiveness.
+- **JavaScript**: Enhancements such as dynamic navigation highlighting and footer year updates.
 
-- **HTML5:** For structuring the content.
-- **CSS3:** For styling and creating responsive layouts.
-- **JavaScript:** For dynamic interactions like updating the footer year and managing active navigation links.
-- **Google Fonts:** Utilizes the *Montserrat* font for a modern look.
+## File Structure
+```
+/portfolio
+│── index.html        # Home Page
+│── projects.html     # Projects Page
+│── about.html        # About Me Page
+│── contact.html      # Contact Page
+│── style.css         # Stylesheet
+│── script.js         # JavaScript functionality
+│── README.md         # Documentation
+```
 
-## Installation & Usage
-
-1. **Clone the Repository:**
-
+## How to Run
+1. Clone the repository:
    ```bash
    git clone https://github.com/Yaswanth9347/portfolio.git
+   ```
+2. Open `index.html` in a web browser.
+3. Navigate through the website to explore different sections.
+
+## Functionalities
+- **Navigation Menu:** Highlights active page dynamically.
+- **Projects Section:** Lists projects with descriptions and GitHub links.
+- **Contact Section:** Provides an email link and a Google Form for inquiries.
+- **Responsive Design:** Adapts to different screen sizes.
+
+## Deployment
+This portfolio can be deployed using GitHub Pages or any static hosting provider.
+
+## Author
+**Yaswanth Yerra**  
+- LinkedIn: [yaswanth-yerra-58467633a](https://www.linkedin.com/in/yaswanth-yerra-58467633a/)
+- GitHub: [Yaswanth9347](https://github.com/Yaswanth9347)
+
+## License
+This project is open-source and available under the MIT License.

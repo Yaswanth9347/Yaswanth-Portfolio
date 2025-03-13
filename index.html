@@ -1,18 +1,19 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Yaswanth, an aspiring Software Developer specializing in Web Development and Problem-Solving." />
   <title>My Portfolio | Yaswanth</title>
-  <!-- Google Fonts: Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Google Fonts: Montserrat & Dancing Script for a personal signature style -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container header-container">
-      <h1 class="logo">Yaswanth</h1>
+      <h1 class="logo"><a href="index.html">Yaswanth</a></h1>
+      <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
       <nav>
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
@@ -31,9 +32,9 @@
         <p>Aspiring Software Developer | Passionate about Web Development &amp; Problem-Solving</p>
         <a href="projects.html" class="btn">View My Projects</a>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/yaswanth-yerra-58467633a/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/yaswanth-yerra-58467633a/" target="_blank" rel="noopener">LinkedIn</a>
           <span>|</span>
-          <a href="https://github.com/Yaswanth9347" target="_blank">GitHub</a>
+          <a href="https://github.com/Yaswanth9347" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </section>
@@ -41,7 +42,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Yaswanth. All Rights Reserved.</p>
+      <p>© <span id="year"></span> Yaswanth. All Rights Reserved.</p>
     </div>
   </footer>
   <script src="script.js"></script>
