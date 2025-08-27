@@ -1,59 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects by Yaswanth. A showcase of web development and software projects." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects by Yaswanth." />
   <title>My Projects | Yaswanth</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <div class="container header-container">
-      <h1 class="logo"><a href="index.html">Yaswanth</a></h1>
-      <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
-      <nav>
-        <ul class="nav-list">
+  <header class="header" role="banner">
+    <div class="container flex-between">
+      <a class="logo" href="index.html">Yaswanth</a>
+      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list flex-center">
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog &amp; Case Studies</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="projects">
+    <section id="projects" class="section" aria-label="Projects Portfolio">
       <div class="container">
         <h2>My Projects</h2>
         <div class="project-grid">
-          <div class="project-card">
-            <h3>Project 1: Multilingual Voice Bot</h3>
-            <p>Voice-enabled multilingual chatbot built with Python, Google Cloud APIs, Dialogflow, and FastAPI for intelligent speech interactions.</p>
+          <article class="project-card" tabindex="0" aria-labelledby="project1-title">
+            <h3 id="project1-title">Multilingual Voice Bot</h3>
+            <p>Voice-enabled chatbot supporting multiple languages using Python, Google Cloud APIs, Dialogflow, and FastAPI.</p>
+            <p><strong>Tech:</strong> Python, Dialogflow, FastAPI, Google Cloud Speech-to-Text</p>
+            <p><strong>Impact:</strong> Developed intelligent speech interaction system for real-time multilingual communication, improving accessibility.</p>
             <a href="https://github.com/Yaswanth9347/Multilingual_voice_bot" target="_blank" rel="noopener" class="btn btn-small">View on GitHub</a>
-          </div>
-          <div class="project-card">
-            <h3>Project 2: Portfolio Website</h3>
-            <p>A personal website built with HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+          </article>
+
+          <article class="project-card" tabindex="0" aria-labelledby="project2-title">
+            <h3 id="project2-title">Portfolio Website</h3>
+            <p>A personal responsive website built with HTML, CSS, and JavaScript demonstrating modern web design and performance optimization.</p>
+            <p><strong>Tech:</strong> HTML5, CSS3, JavaScript, Responsive Design</p>
+            <p><strong>Impact:</strong> Showcases skills and projects with enhanced user experience and accessibility.</p>
             <a href="https://github.com/Yaswanth9347/yaswanth.github.io" target="_blank" rel="noopener" class="btn btn-small">View on GitHub</a>
-          </div>
-          <div class="project-card">
-            <h3>Project 3: Medical Store Management</h3>
-            <p>Built a Flask web app for managing medical shop inventory, sales, and customer data with MySQL integration, reporting, and robust error handling.</p>
+          </article>
+
+          <article class="project-card" tabindex="0" aria-labelledby="project3-title">
+            <h3 id="project3-title">Medical Store Management</h3>
+            <p>A comprehensive Flask web app managing inventory, sales, and customer data with MySQL, designed with robust error handling and reporting.</p>
+            <p><strong>Tech:</strong> Flask, MySQL, Python, REST APIs</p>
+            <p><strong>Impact:</strong> Streamlined operations for medical stores reducing manual errors and improving data accuracy.</p>
             <a href="https://github.com/Yaswanth9347/Medical_Management" target="_blank" rel="noopener" class="btn btn-small">View on GitHub</a>
-          </div>
+          </article>
+
+          <article class="project-card" tabindex="0" aria-labelledby="project4-title">
+            <h3 id="project4-title">Sentiment Analysis of Social Media Tweets</h3>
+            <p>A system to classify social media tweets into Positive, Negative, Neutral, or Irrelevant sentiments using machine learning and NLP techniques.</p>
+            <p><strong>Tech Stack:</strong> Python, Flask API, Streamlit, Logistic Regression, SVM, Naive Bayes, Kaggle Dataset</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Real-time sentiment prediction via a Flask REST API.</li>
+              <li>Interactive dashboard built with Streamlit for visualization and analysis.</li>
+              <li>Comprehensive text preprocessing pipeline for cleaning and tokenization.</li>
+              <li>Comparison of multiple classification algorithms to identify the best model.</li>
+            </ul>
+            <p><strong>Impact:</strong> Enables businesses and analysts to quickly gauge public opinion and sentiment trends on social media platforms for timely decision making.</p>
+            <a href="https://github.com/Yaswanth9347/social_media_sentiment_analysis" target="_blank" rel="noopener" class="btn btn-small">View on GitHub</a>
+          </article>
+
+          <article class="project-card" tabindex="0" aria-labelledby="project5-title">
+            <h3 id="project5-title">ClarkAI-Assistant</h3>
+            <p>
+              A voice-enabled personal AI assistant inspired by Iron Man’s Jarvis, built with LiveKit Agents framework and Google’s realtime generative AI model.
+            </p>
+            <p><strong>Tech Stack:</strong> Python 3.10+, LiveKit Agents, Google Cloud APIs (Generative Language, Gmail, Calendar), OAuth 2.0, Home Assistant API, Async Python</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+              <li>Conversational, sarcastic butler-style AI persona with real-time voice interaction.</li>
+              <li>Weather queries, web search (DuckDuckGo via LangChain), multi-language voice responses.</li>
+              <li>Advanced calendar management integrated with Google Calendar API.</li>
+              <li>Home automation control via Home Assistant REST API.</li>
+              <li>Email handling including reading, sending, replying with Gmail API and attachments.</li>
+              <li>Noise cancellation for clear voice communication.</li>
+              <li>Persistent contextual sessions and memory for natural multi-intent conversations.</li>
+              <li>Fully asynchronous design for efficient resource usage.</li>
+            </ul>
+            <p><strong>Setup & Usage:</strong> Virtual environment with dependencies installed via pip, environment variables configuration for secure API keys, run via <code>python3 agent.py console</code>.</p>
+            <p><strong>Impact:</strong> Provides hands-free, intelligent automation and communication capabilities, enhancing productivity and smart home control with an engaging AI persona.</p>
+            <a href="https://github.com/Yaswanth9347/ClarkAI-Assistant" target="_blank" rel="noopener" class="btn btn-small">View on GitHub</a>
+          </article>
+
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
+  
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <p>© <span id="year"></span> Yaswanth. All Rights Reserved.</p>
+      <small>Links verified regularly for accuracy and uptime.</small>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Yaswanth, an aspiring Software Developer. Get in touch via email or social links." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Yaswanth. Connect via email or social links." />
   <title>Contact Me | Yaswanth</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <h1 class="logo"><a href="index.html">Yaswanth</a></h1>
-      <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
-      <nav>
-        <ul class="nav-list">
+  <header class="header" role="banner">
+    <div class="container flex-between">
+      <a class="logo" href="index.html">Yaswanth</a>
+      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
+      <nav class="nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list flex-center">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li><a href="blog.html">Blog &amp; Case Studies</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="contact">
+    <section id="contact" class="section" aria-label="Contact Information">
       <div class="container">
         <h2>Get in Touch</h2>
-        <p>To send me a message, please fill out my Google Form:</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQLGAwfy-rjGS9eB64_AfybshDxGFOzTm9HAs8pipjKkiUuw/viewform?usp=dialog" target="_blank" rel="noopener" class="btn">Open Contact Form</a>
-        <div class="contact-info">
-          <p>Email: <a href="mailto:yaswanthyerra2025@gmail.com">yaswanthyerra2025@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/yaswanth-yerra-58467633a/" target="_blank" rel="noopener">Yaswanth's LinkedIn</a></p>
-          <p>GitHub: <a href="https://github.com/Yaswanth9347" target="_blank" rel="noopener">Yaswanth's GitHub</a></p>
+        <p>Send a message via the Google Form:</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQLGAwfy-rjGS9eB64_AfybshDxGFOzTm9HAs8pipjKkiUuw/viewform?usp=dialog" target="_blank" rel="noopener" class="btn">Contact Form</a>
+        <div class="contact-info" aria-live="polite" aria-atomic="true">
+          <p><strong>Email:</strong> <a href="mailto:yaswanthyerra2025@gmail.com">yaswanthyerra2025@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yaswanth-yerra-58467633a/" target="_blank" rel="noopener">Yaswanth Yerra</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Yaswanth9347" target="_blank" rel="noopener">Yaswanth9347</a></p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <p>© <span id="year"></span> Yaswanth. All Rights Reserved.</p>
+      <small>Links verified regularly for accuracy and uptime.</small>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
