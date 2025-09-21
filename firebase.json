@@ -5,4 +5,3 @@
     "rewrites": [{ "source": "**", "destination": "/index.html" }]
   }
 }
-JSON
