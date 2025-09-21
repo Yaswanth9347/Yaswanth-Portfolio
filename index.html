@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Yaswanth, aspiring Software Developer." />
-  <title>Yaswanth | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaswanth Yerra | Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'subtle-shine': 'subtle-shine 4s ease-in-out infinite',
+            },
+            keyframes: {
+              'subtle-shine': {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-  <header class="header" role="banner">
-    <div class="container flex-between">
-      <a class="logo" href="index.html">Yaswanth</a>
-      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
-      <nav class="nav" role="navigation" aria-label="Main Navigation">
-        <ul class="nav-list flex-center">
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="blog.html">Blog &amp; Case Studies</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="intro" class="section flex-center-column" aria-label="Introduction">
-      <h1 class="fade-in">Hi, I'm Yaswanth Yerra</h1>
-      <p class="subtitle fade-in delay-1">Aspiring Software Developer <span aria-hidden="true">|</span> Web Developer &amp; Problem-Solver</p>
-      <a href="projects.html" class="btn fade-in delay-2" role="button">View My Projects</a>
-      <div class="social-links fade-in delay-3" aria-label="Social Media Links">
-        <a href="https://www.linkedin.com/in/yaswanth-yerra-58467633a/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">LinkedIn</a>
-        <a href="https://github.com/Yaswanth9347" target="_blank" rel="noopener" aria-label="GitHub Profile">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>© <span id="year"></span> Yaswanth. All Rights Reserved.</p>
-      <small>Links verified regularly for accuracy and uptime.</small>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <body class="bg-slate-900 text-slate-300 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
