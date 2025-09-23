@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
                 aria-hidden="true"
               >
                 <ellipse
-                  cx="94"
+                  cx="94.8"
                   cy="130.5"
                   rx="90"
-                  ry="115"
+                  ry="114"
                   fill="none"
                   stroke="#334155"
                   strokeWidth="8"
